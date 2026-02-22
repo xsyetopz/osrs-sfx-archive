@@ -10,11 +10,17 @@ Extracted Old School RuneScape sound effects (.synth files) from RuneLite cache.
 ## Usage
 
 ```bash
-# Extract from RuneLite cache
-python3 osrs_synth_extractor.py --cache ~/.runelite/jagexcache/oldschool/LIVE --out ./synths
+# Extract specific
+python3 tools/osrs_synth_extractor.py --cache ~/.runelite/jagexcache/oldschool/LIVE --ids 5876 5844 5822
 
-# Extract specific sound effect
-python3 osrs_synth_extractor.py --cache ~/.runelite/jagexcache/oldschool/LIVE --out ./synths --start-id 370 --end-id 370
+# Extract between specifics
+python3 tools/osrs_synth_extractor.py --cache ~/.runelite/jagexcache/oldschool/LIVE --start-id 5822 --end-id 5885
+
+# Extract singular
+python3 tools/osrs_synth_extractor.py --cache ~/.runelite/jagexcache/oldschool/LIVE --start-id 5876
+
+# Extract all sounds
+python3 tools/osrs_synth_extractor.py --cache ~/.runelite/jagexcache/oldschool/LIVE --all
 ```
 
 ## Sound Effect IDs
