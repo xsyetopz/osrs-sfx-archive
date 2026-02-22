@@ -1,0 +1,1 @@
+synths/**/*.synth filter=lfs diff=lfs merge=lfs -text
